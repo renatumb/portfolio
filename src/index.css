@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    *[data-theme='dark'] {
+        --color-primary: 0deg 0% 25%;
+        --color-secondary: 0deg 0% 10%;
+        --color-accent1: 166deg 94% 67%;
+        --color-accent2: 166deg 74% 92%;
+        --color-accent3: 162deg 97% 27%;
+        color-scheme: dark;
+    }
+
+    *[data-theme='light'] {
+        --color-primary: 0deg 0% 95%;
+        --color-secondary: 0deg 0% 75%;
+        --color-accent1: 215deg 95% 25%;
+        --color-accent2: 200deg 95% 25%;
+        --color-accent3: 150deg 97% 27%;
+        color-scheme: light;
+    }
+
+    *[data-theme='blue'] {
+        --color-primary: 201deg 100% 36%;
+        --color-secondary: 239deg 94% 19%;
+        --color-accent1: 190deg 100% 42%;
+        --color-accent2: 189deg 75% 75%;
+        --color-accent3: 190deg 77% 88%;
+        color-scheme: light;
+    }
+
+    *[data-theme='green'] {
+        --color-primary: 74deg 32% 32%;
+        --color-secondary: 88deg 38% 15%;
+        --color-accent1: 52deg 94% 94%;
+        --color-accent2: 32deg 65% 62%;
+        --color-accent3: 28deg 67% 44%;
+        color-scheme: light;
+    }
+    /** ToDO: add the @media( prefers-color-scheme:XXX) to handle colors mode based on user's system!! OR color-scheme */
+    html {
+        @apply scroll-smooth
+    }
+}
+
+@layer utilities {
+}
