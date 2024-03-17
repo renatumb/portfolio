@@ -1,13 +1,18 @@
 import './App.css'
+import Header from "./components/Header.tsx";
+import Main from "./components/Main.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
 
 
-  return (
-    <div>
-        <h1 className="bg-blue-500 text-5xl">hello here !!</h1>
-    </div>
-  )
+    return (
+        <>
+            <Header/>
+            <Main/>
+            <Footer/>
+        </>
+    )
 }
 
 export default App

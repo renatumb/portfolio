@@ -25,7 +25,7 @@ export default function Header() {
     }
 
     return (
-        <header className="sticky bg-colorSecondary  w-screen ">
+        <header className="sticky top-0 bg-colorSecondary  w-screen ">
             <section className="container  ">
                 <nav className="flex justify-between items-center py-1  flex-1  ">
 
