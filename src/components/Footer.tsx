@@ -1,4 +1,4 @@
-import {RiContactsBook2Fill, RiContactsBook2Line, RiEmotionHappyFill, RiExternalLinkLine, RiFileCloudLine, RiFileDownloadFill, RiFileDownloadLine, RiHeart2Fill, RiMessage2Line} from "@remixicon/react";
+import { RiContactsBook2Line, RiEmotionHappyFill, RiExternalLinkLine, RiFileCloudLine, RiFileDownloadFill, RiFileDownloadLine, RiHeart2Fill, RiMessage2Line} from "@remixicon/react";
 
 export default function Footer() {
     return (
