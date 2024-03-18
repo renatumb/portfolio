@@ -11,9 +11,10 @@ import i10tailwind from './../../assets/images/tools/10tailwind.svg'
 import i11vite from './../../assets/images/tools/11vite.svg'
 import i12git from './../../assets/images/tools/12git.png'
 import i13maven from './../../assets/images/tools/13maven.svg'
-import i14node from './../../assets/images/tools/14node.png'
+//import i14node from './../../assets/images/tools/14node.png'
 import i15sling from './../../assets/images/tools/15sling.svg'
 import i16jackrabbit from './../../assets/images/tools/16jackrabbit.svg'
+import i17npm from './../../assets/images/tools/17npm.svg'
 
 export default function Tools() {
     const tools: { logo: string, caption: string }[] = [
@@ -29,14 +30,15 @@ export default function Tools() {
         {logo: i9intelij, caption: 'IntelliJ IDEA '},
         {logo: i11vite, caption: 'vite'},
         {logo: i10tailwind, caption: 'tailwind css'},
+        {logo: i17npm, caption: 'NPM'},
+        //{logo: i14node, caption: 'Node.js'},
         {logo: i13maven, caption: 'Apache Maven'},
-        {logo: i14node, caption: 'Node.js'},
         {logo: i15sling, caption: 'Apache Sling'},
         {logo: i16jackrabbit, caption: 'Apache Jackrabbit'},
     ]
 
     return (
-        <section className="bg-colorPrimary  overflow-clip h-screen pt-20 border" id="tools">
+        <section className="bg-colorPrimary  overflow-clip h-screen pt-20 " id="tools">
             <article className="container">
                 <div className="px-8  ">
                     <h2 className="text-left text-lg font-bold uppercase text-colorAccent1 py-3

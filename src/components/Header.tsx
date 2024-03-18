@@ -25,7 +25,7 @@ export default function Header() {
     }
 
     return (
-        <header className="sticky top-0 bg-colorSecondary  w-screen ">
+        <header className="sticky top-0 bg-colorSecondary  w-screen z-30">
             <section className="container  ">
                 <nav className="flex justify-between items-center py-1  flex-1  ">
 
@@ -36,12 +36,12 @@ export default function Header() {
 
                     <div className=" flex lg:flex-row lg:justify-end md:gap-5 lg:gap-10 ">
                         <ul id="mobile-menu" className=" hidden md:hidden
-                                                    absolute top-16 left-0  flex-col items-center w-full text-center border-t-[1px] border-t-colorAccent1
+                                                    absolute top-16 left-0  flex-col items-center w-full text-center border-t-[1px] border-t-colorAccent1 border-b border-b-colorAccent1
                                                     bg-colorPrimary text-colorAccent1 text-3xl font-bold font-oswald lowercase tracking-wider
                                                      " onClick={toggleMenu}>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#about">About</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#work">Work</a></li>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#tools">Tools</a></li>
+                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#tools">Skills</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#testimonials">Testimonials</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#contact">Contact</a></li>
                         </ul>
@@ -49,7 +49,7 @@ export default function Header() {
                         <ul className=" hidden md:flex text-colorAccent1 font-bold font-oswald  tracking-wider bg-colorSecondary capitalize text-base gap-0 lg:text-2xl xl:text-3xl">
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#about">About</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#work">Work</a></li>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#tools">Tools</a></li>
+                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#tools">Skills</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#testimonials">Testimonials</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#contact">Contact</a></li>
                         </ul>

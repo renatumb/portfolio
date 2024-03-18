@@ -11,6 +11,7 @@
         --color-accent2: 166deg 74% 92%;
         --color-accent3: 162deg 97% 27%;
         color-scheme: dark;
+        --color-accent1deg: 80deg;
     }
 
     *[data-theme='light'] {
@@ -20,6 +21,7 @@
         --color-accent2: 200deg 95% 25%;
         --color-accent3: 150deg 97% 27%;
         color-scheme: light;
+        --color-accent1deg: 170deg
     }
 
     *[data-theme='blue'] {
@@ -29,6 +31,7 @@
         --color-accent2: 189deg 75% 75%;
         --color-accent3: 190deg 77% 88%;
         color-scheme: light;
+        --color-accent1deg: 110deg
     }
 
     *[data-theme='green'] {
@@ -38,6 +41,7 @@
         --color-accent2: 32deg 65% 62%;
         --color-accent3: 28deg 67% 44%;
         color-scheme: light;
+        --color-accent1deg: 0deg
     }
     /** ToDO: add the @media( prefers-color-scheme:XXX) to handle colors mode based on user's system!! OR color-scheme */
     html {
@@ -50,5 +54,8 @@
         @apply text-colorAccent2 font-oswald font-normal text-justify
     }
 
+    .mono-color-filter{
+        filter:  grayscale(100%) sepia(100%) hue-rotate(var(--color-accent1deg) ) ;
+    }
 
 }
