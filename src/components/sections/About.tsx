@@ -10,7 +10,7 @@ export default function About() {
                                     lg:before:inset-y-20
                                     xl:before:skew-y-[5deg]
                                     ">
-                <article className="container pb-12">
+                <article className="container pb-12  max-w-screen-lg">
                     <div className="    flex flex-col justify-center items-center pb-12
                                         md:flex-row md:relative px-1 sm:px-10 md:px-16 ">
 

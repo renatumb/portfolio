@@ -50,7 +50,7 @@ export default function Tools() {
                     ">
                         {tools.map((item, index) => (
                             <div key={index} className="  flex flex-col justify-around  items-center  max-w-9
-                                    md:max-w-14 lg:max-w-24
+                                    md:max-w-14 lg:max-w-20
                              ">
                                 <figure className="">
                                     <img src={item.logo} className="object-scale-down object-center size-full"/>
