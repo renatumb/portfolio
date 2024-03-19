@@ -24,10 +24,32 @@ export default function Header() {
         mobileMenu.classList.toggle('hidden')
     }
 
+    let timer = 0;
+    window.addEventListener('scroll', () => {
+        clearTimeout(timer)
+
+        timer = setTimeout(() => {
+
+            const mainNav = document.getElementById('mainNav')
+            const mainHeader = document.getElementById('header')
+            if (mainNav && mainHeader ) {
+                if (window.scrollY > 50){
+                    mainNav.classList.add('scale-90')
+                    mainHeader.classList.add('bg-colorSecondary')
+                    mainHeader.classList.remove('bg-colorPrimary')
+                }else{
+                    mainNav.classList.remove('scale-90')
+                    mainHeader.classList.add('bg-colorPrimary')
+                    mainHeader.classList.remove('bg-colorSecondary')
+                }
+            }
+        }, 200)
+    })
+
     return (
-        <header className="sticky top-0 bg-colorSecondary  w-screen z-30">
-            <section className="container  ">
-                <nav className="flex justify-between items-center py-1  flex-1  ">
+        <header id='header' className="sticky top-0   w-screen z-30 transition-all  bg-colorPrimary">
+            <section className="container ">
+                <nav id="mainNav" className="flex justify-between items-center py-1  flex-1  transition-all  ">
 
                     <a href="#"><RiTerminalBoxLine className="size-14 text-colorAccent3 hover:text-colorAccent1 hover:scale-110 transition-all"/></a>
 
@@ -39,27 +61,27 @@ export default function Header() {
                                                     absolute top-16 left-0  flex-col items-center w-full text-center border-t-[1px] border-t-colorAccent1 border-b border-b-colorAccent1
                                                     bg-colorPrimary text-colorAccent1 text-3xl font-bold font-oswald lowercase tracking-wider
                                                      " onClick={toggleMenu}>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#about">About</a></li>
+                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#about">1About</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#work">Work</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#tools">Skills</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#testimonials">Testimonials</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#contact">Contact</a></li>
                         </ul>
 
-                        <ul className=" hidden md:flex text-colorAccent1 font-bold font-oswald  tracking-wider bg-colorSecondary capitalize text-base gap-0 lg:text-2xl xl:text-3xl">
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#about">About</a></li>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#work">Work</a></li>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#tools">Skills</a></li>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#testimonials">Testimonials</a></li>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#contact">Contact</a></li>
+                        <ul className=" hidden md:flex text-colorAccent1 font-bold font-oswald  tracking-wider  capitalize text-base gap-0 lg:text-2xl xl:text-3xl">
+                            <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#about">About</a></li>
+                            <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#work">Work</a></li>
+                            <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#tools">Skills</a></li>
+                            <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#testimonials">Testimonials</a></li>
+                            <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
                     <div className="flex flex-row justify-around items-center gap-5  px-3  ">
-                        <RiDropFill className="hover:scale-125 hover:cursor-pointer transition-all text-blue-600" onClick={() => selectTheme(  availableThemes[0] )}/>
-                        <RiMoonFill className="hover:scale-125 hover:cursor-pointer transition-all text-purple-900" onClick={() => selectTheme(availableThemes[1] )}/>
-                        <RiLeafFill className="hover:scale-125 hover:cursor-pointer transition-all text-green-700" onClick={() => selectTheme( availableThemes[2] )}/>
-                        <RiSunFill className=" hover:scale-125 hover:cursor-pointer transition-all text-yellow-600" onClick={() => selectTheme(availableThemes[3] )}/>
+                        <RiDropFill className="hover:scale-125 hover:cursor-pointer transition-all text-blue-600" onClick={() => selectTheme(availableThemes[0])}/>
+                        <RiMoonFill className="hover:scale-125 hover:cursor-pointer transition-all text-purple-900" onClick={() => selectTheme(availableThemes[1])}/>
+                        <RiLeafFill className="hover:scale-125 hover:cursor-pointer transition-all text-green-700" onClick={() => selectTheme(availableThemes[2])}/>
+                        <RiSunFill className=" hover:scale-125 hover:cursor-pointer transition-all text-yellow-600" onClick={() => selectTheme(availableThemes[3])}/>
                         <RiMenuLine className="hover:scale-125 hover:cursor-pointer transition-all text-colorAccent1 md:hidden" onClick={toggleMenu}/>
                     </div>
                 </nav>

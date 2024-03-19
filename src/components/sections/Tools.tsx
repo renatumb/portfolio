@@ -38,7 +38,7 @@ export default function Tools() {
     ]
 
     return (
-        <section className="bg-colorPrimary  overflow-clip h-screen pt-20 " id="tools">
+        <section className="bg-colorPrimary  overflow-clip  py-20 " id="tools">
             <article className="container">
                 <div className="px-8  ">
                     <h2 className="text-left text-lg font-bold uppercase text-colorAccent1 py-3
