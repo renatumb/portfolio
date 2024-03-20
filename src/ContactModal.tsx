@@ -10,7 +10,7 @@ interface ContactModalProps {
 export default function ContactModal({toggleContactModal, modalId}: ContactModalProps) {
 
     return (
-        <section className="hidden fixed top-0 left-0 h-screen w-screen backdrop-blur bg-colorSecondary/60 z-50 " id={modalId} onClick={toggleContactModal}>
+        <section className="hidden fixed top-0 left-0 h-screen w-screen backdrop-blur bg-colorSecondary/60 z-50 animate-openMenu" id={modalId} onClick={toggleContactModal}>
             <article className="container max-w-screen-sm  border border-colorAccent1 mt-16 ">
                 <div className="p-5 bg-colorPrimary relative">
                     <button className="absolute right-5 border border-colorAccent1 text-red-700 font-extrabold hover:scale-110 transition-all"><RiCloseLine className="size-8"/></button>

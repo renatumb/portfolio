@@ -19,6 +19,12 @@ export default {
                     '10%'  :  { opacity: '1', transform:'scale(1.1)'  },
                     '12%'  :  { opacity: '0',   },
                     '100%':  { opacity: '0', },
+                },
+                'open-menu':{
+                    '0%'  : { transform: 'scale(0,0)'},
+                    '50%' : { transform: 'scale(1.1,1.1)'},
+                    '80%' : { transform: 'scale(0.95,0.95)'},
+                    '100%': { transform: 'scale(1,1)'},
                 }
             },
             animation: {
@@ -32,7 +38,7 @@ export default {
                 pushEffect8:  'pushEffect 29s linear infinite 21s',
                 pushEffect9:  'pushEffect 29s linear infinite 24s',
                 pushEffect10: 'pushEffect 29s linear infinite 27s',
-
+                openMenu    : 'open-menu .5s ease-in-out forwards'
 
             }
         },
