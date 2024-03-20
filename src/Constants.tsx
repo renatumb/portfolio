@@ -6,5 +6,6 @@ export enum myLinks {
     gitHub = 'https://github.com/renatumb',
     resume = 'https://drive.google.com/drive/folders/14oJmEA1Y4qzwi9boQlNHXnAURMsJOFrf',
     instagram = 'https://www.instagram.com/__renatu__/',
-    email = 'renatu_mb@yahoo.com.br'
+    email = 'renatu_mb@yahoo.com.br',
+    phoneCA = '+1 778 837 2016'
 }

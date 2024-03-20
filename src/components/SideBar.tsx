@@ -9,7 +9,7 @@ export default function SideBar() {
 
 
     return (
-        <aside className="fixed left-1 top-2/3 z-40">
+        <aside className="fixed left-1 top-1/2 z-40">
             <section>
                 <ul className="flex flex-col items-center gap-4 bg-colorSecondary/50 rounded p-1 text-colorAccent1">
                     <li className="hover:scale-125 hover:cursor-pointer">

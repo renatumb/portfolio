@@ -2,15 +2,24 @@ import './App.css'
 import Header from "./components/Header.tsx";
 import Main from "./components/Main.tsx";
 import Footer from "./components/Footer.tsx";
+import ContactModal from "./ContactModal.tsx";
 
 function App() {
 
+    const contactModal = 'contactModal'
+    const toggleContactModal = () => {
+        let modal = document.getElementById(contactModal)
+        if (modal) {
+            modal.classList.toggle('hidden')
+        }
+    }
 
     return (
         <>
-            <Header/>
-            <Main/>
-            <Footer/>
+            <Header toggleContactModal={ toggleContactModal } />
+            <Main  />
+            <Footer toggleContactModal={ toggleContactModal } />
+            <ContactModal modalId={contactModal} toggleContactModal={ toggleContactModal }/>
         </>
     )
 }

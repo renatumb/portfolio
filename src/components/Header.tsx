@@ -1,7 +1,11 @@
 import {RiDropFill, RiLeafFill, RiMenuLine, RiMoonFill, RiSunFill, RiTerminalBoxLine} from "@remixicon/react";
 import {useEffect, useState} from "react";
 
-export default function Header() {
+interface HeaderProps {
+    toggleContactModal: () => void
+}
+
+export default function Header({toggleContactModal}: HeaderProps) {
 
     const availableThemes : string [] =  ['blue', 'dark', 'green', 'light']
     const [theme, setTheme] = useState( localStorage.getItem('themeSet') ? localStorage.getItem('themeSet') : availableThemes[1] )
@@ -61,11 +65,11 @@ export default function Header() {
                                                     absolute top-16 left-0  flex-col items-center w-full text-center border-t-[1px] border-t-colorAccent1 border-b border-b-colorAccent1
                                                     bg-colorPrimary text-colorAccent1 text-3xl font-bold font-oswald lowercase tracking-wider
                                                      " onClick={toggleMenu}>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#about">1About</a></li>
+                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#about">About</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#work">Work</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#tools">Skills</a></li>
                             <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#testimonials">Testimonials</a></li>
-                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href="#contact">Contact</a></li>
+                            <li className="hover:bg-colorSecondary hover:text-colorAccent3 w-full p-3.5"><a href='#' onClick={toggleContactModal}>Contact</a></li>
                         </ul>
 
                         <ul className=" hidden md:flex text-colorAccent1 font-bold font-oswald  tracking-wider  capitalize text-base gap-0 lg:text-2xl xl:text-3xl">
@@ -73,7 +77,7 @@ export default function Header() {
                             <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#work">Work</a></li>
                             <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#tools">Skills</a></li>
                             <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#testimonials">Testimonials</a></li>
-                            <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href="#contact">Contact</a></li>
+                            <li className=" hover:text-colorAccent3 hover:scale-110 transition-all p-3.5"><a href='#' onClick={toggleContactModal}>Contact</a></li>
                         </ul>
                     </div>
 

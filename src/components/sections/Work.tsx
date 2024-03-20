@@ -61,9 +61,9 @@ export default function Work() {
                                 effect={'coverflow'} centeredSlides={true}
                         >
                             {
-                                projects.map((element) => {
+                                projects.map((element, index) => {
                                     return (
-                                        <SwiperSlide>
+                                        <SwiperSlide key={index}>
                                             <WorkSample title={element.title} description={element.description} image={element.image} icons={element.icons} link={element.link}/>
                                         </SwiperSlide>
                                     )
