@@ -24,7 +24,7 @@ export default function Hero() {
                                         lg:text-2xl lg:font-normal
                                         xl:text-3xl'>
                             and
-                            <div className='inline text-colorAccent3 ml-2 relative '>
+                            <div className='inline text-colorAccent3 ml-2 relative font-medium'>
                                 <span className='opacity-0 absolute left-0 text-nowrap origin-top-left animate-pushEffect1 '>Motorcyclist 🏍️</span>
                                 <span className='opacity-0 absolute left-0 text-nowrap origin-top-left animate-pushEffect2'>Coding Caffeinator 👨🏽‍💻</span>
                                 <span className='opacity-0 absolute left-0 text-nowrap origin-top-left animate-pushEffect3'>Rollerblader 🛼</span>

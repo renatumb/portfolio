@@ -1,5 +1,6 @@
 import {RiCloseLine, RiDropFill, RiLeafFill, RiMenuLine, RiMoonFill, RiSunFill, RiTerminalBoxLine} from "@remixicon/react";
 import {useEffect, useState} from "react";
+import SideButton from "./SideButton.tsx";
 
 interface HeaderProps {
     toggleContactModal: () => void
@@ -31,29 +32,45 @@ export default function Header({toggleContactModal}: HeaderProps) {
         setMenuOpen( previous => !previous )
     }
 
-    let timer = 0;
-    window.addEventListener('scroll', () => {
-        clearTimeout(timer)
+    useEffect(() => {
+        let timer = 0;
+        window.addEventListener('scroll', () => {
+            clearTimeout(timer)
 
-        timer = setTimeout(() => {
+            timer = setTimeout(() => {
 
-            const mainNav = document.getElementById('mainNav')
-            const mainHeader = document.getElementById('header')
-            if (mainNav && mainHeader ) {
-                if (window.scrollY > 50){
-                    mainNav.classList.add('scale-90')
-                    mainHeader.classList.add('bg-colorSecondary')
-                    mainHeader.classList.remove('bg-colorPrimary')
-                }else{
-                    mainNav.classList.remove('scale-90')
-                    mainHeader.classList.add('bg-colorPrimary')
-                    mainHeader.classList.remove('bg-colorSecondary')
+                const mainNav = document.getElementById('mainNav')
+                const mainHeader = document.getElementById('header')
+
+                const sideButton = document.getElementById('sideButton')
+
+                if (mainNav && mainHeader) {
+                    if (window.scrollY > 50) {
+                        mainNav.classList.add('scale-90')
+                        mainHeader.classList.add('bg-colorSecondary')
+                        mainHeader.classList.remove('bg-colorPrimary')
+                    } else {
+                        mainNav.classList.remove('scale-90')
+                        mainHeader.classList.add('bg-colorPrimary')
+                        mainHeader.classList.remove('bg-colorSecondary')
+                    }
+
                 }
-            }
-        }, 200)
-    })
+
+                if (sideButton) {
+                    if (window.scrollY > 1000) {
+                        sideButton.classList.remove('hidden')
+                    } else {
+                        sideButton.classList.add('hidden')
+                    }
+                }
+            }, 200)
+        })
+    }, []);
+
 
     return (
+        <>
         <header id='header' className="sticky top-0   w-screen z-30 transition-all  bg-colorPrimary">
             <section className="container ">
                 <nav id="mainNav" className="flex justify-between items-center py-1  flex-1  transition-all  ">
@@ -98,6 +115,8 @@ export default function Header({toggleContactModal}: HeaderProps) {
                 </nav>
             </section>
         </header>
+            <SideButton/>
+        </>
     )
 }
 
