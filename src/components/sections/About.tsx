@@ -1,4 +1,5 @@
 import me from "./../../assets/images/renatu6.jpg"
+import {myLinks} from "../../Constants.tsx";
 
 export default function About() {
     return (
@@ -39,9 +40,12 @@ export default function About() {
                                 and developing scalable solutions. My expertise extends to AEM, Java, SQL (MySQL, PostgreSQL, MSSQL)
                                 , Angular, Spring Boot, Microservices, and RestFul technologies; I am also ready to learn any new technologies essential for future roles.</p><br/>
 
-                            <p className="paragraph mb-5 ">I am currently focusing on Adobe Experience Manager (AEM) and have completed multiple
+                            <p className="paragraph  ">I am currently focusing on Adobe Experience Manager (AEM) and have completed multiple
                                 trainings from Adobe. My educational background includes a Bachelor's degree in
-                                Computer Information Systems and a Diploma in Graphic and Web Development</p>
+                                Computer Information Systems and a Diploma in Graphic and Web Development</p><br/>
+
+                            <a className="block w-fit border rounded text-base p-3  text-colorAccent1 border-colorAccent1 hover:bg-colorAccent2/30 hover:scale-110 transition-all " href={myLinks.resume} target='_blank'>See Resume</a>
+                            <br/>
                         </div>
                     </div>
                 </article>

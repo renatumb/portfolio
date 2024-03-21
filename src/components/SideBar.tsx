@@ -1,10 +1,14 @@
-import {RiGithubFill, RiInstagramLine, RiLinkedinFill, RiWhatsappLine} from "@remixicon/react";
+import {RiContactsBookLine, RiGithubFill, RiInstagramLine, RiLinkedinFill, RiWhatsappLine} from "@remixicon/react";
 
 import {myLinks} from "../Constants.tsx";
 
 import i2aem from './../assets/images/tools/2aem.png'
 
-export default function SideBar() {
+interface SideBarProps {
+    toggleContactModal: () => void
+}
+
+export default function SideBar({toggleContactModal}: SideBarProps) {
 
 
 
@@ -12,6 +16,9 @@ export default function SideBar() {
         <aside className="fixed left-1 top-1/2 z-40">
             <section>
                 <ul className="flex flex-col items-center gap-4 bg-colorSecondary/50 rounded p-1 text-colorAccent1">
+                    <li className="hover:scale-125 hover:cursor-pointer">
+                        <a target='_blank' onClick={toggleContactModal}><RiContactsBookLine/></a>
+                    </li>
                     <li className="hover:scale-125 hover:cursor-pointer">
                         <a target='_blank' href={myLinks.linkedin}><RiLinkedinFill/></a>
                     </li>
