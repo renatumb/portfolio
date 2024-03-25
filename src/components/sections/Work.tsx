@@ -27,6 +27,7 @@ import managerImage from './../../assets/images/work/management.png'
 import recipesImage from './../../assets/images/work/recipes.png'
 import contactImage from './../../assets/images/work/contact.png'
 import rocketsImage from './../../assets/images/work/rockets.png'
+import {RiSparkling2Line} from "@remixicon/react";
 
 export default function Work() {
 
@@ -46,7 +47,7 @@ export default function Work() {
                     <h2 className="text-left text-lg font-bold uppercase text-colorAccent1 py-3 md:text-xl lg:text-2xl ">Work</h2>
                     <p className="paragraph md:text-lg xl:text-2xl">
                         These projects hold a special place in my preferences. I continuously seek enjoyable challenges as opportunities for learning.<br/>
-                        Any feedback is welcomed with gratitude!</p>
+                        Any feedback is welcomed with gratitude! <RiSparkling2Line className="inline text-colorAccent3"/></p>
                     <div className="lg:max-w-screen-xl relative m-auto">
 
                         <Swiper navigation={true} pagination={true} loop={true} grabCursor={true} modules={[Navigation, Pagination, EffectCoverflow]} autoplay={true} speed={100}
