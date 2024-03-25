@@ -1,8 +1,10 @@
 name: NodeJS with Vite
 
 on:
-  push:
-    branches: [ "dev" ]
+  pull_request:
+    types:
+      - closed
+    branches: [ "main" ]
 
 jobs:
   build:
