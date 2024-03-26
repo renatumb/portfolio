@@ -34,7 +34,9 @@ export default function WorkSample({title, description, image, icons, link}: Wor
                     </div>
                 </div>
             </div>
-            <img className=" object-scale-down object-center md:max-w-[500px]" src={image}/>
+            <a target="_blank" href={link}>
+                <img className=" object-scale-down object-center md:max-w-[500px]" src={image}/>
+            </a>
         </div>
     )
 }
