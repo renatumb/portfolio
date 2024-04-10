@@ -7,5 +7,6 @@ export enum myLinks {
     resume = 'https://drive.google.com/drive/folders/14oJmEA1Y4qzwi9boQlNHXnAURMsJOFrf',
     instagram = 'https://www.instagram.com/__renatu__/',
     email = 'renatu_mb@yahoo.com.br',
-    phoneCA = '+1 778 837 2016'
+    phoneCA = '+1 778 837 2016',
+    phoneBR = '+55 11 94566 1594'
 }
