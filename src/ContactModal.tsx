@@ -36,7 +36,8 @@ export default function ContactModal({toggleContactModal, modalId}: ContactModal
                                 <RiPhoneLine className=' justify-self-end sm:size-10'/>
                                 <div>
                                     <p>Mobile</p>
-                                    <p>{myLinks.phoneCA}</p>
+                                    <p>🇧🇷: {myLinks.phoneBR}</p>
+                                    <p>🇨🇦: {myLinks.phoneCA}</p>
                                 </div>
                             </div>
                         </div>
