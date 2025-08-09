@@ -19,7 +19,7 @@ export default function About() {
                                          md:size-56 md:absolute md:top-8 md:left-12
                                         lg:size-64 lg:left-16
                                         xl:left-28">
-                            <img src={me} className="object-cover object-center size-full"/>
+                            <img src={me} className="object-cover object-center size-full" alt="Renato's profile picture"/>
                         </div>
                         <div className=" rounded-2xl bg-colorSecondary mx-5  z-10     px-8
                                            md:text-lg  md:w-fit md:pl-40 md:pt-5 md:mt-16 md:ml-20

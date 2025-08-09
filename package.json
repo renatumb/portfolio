@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --port 5173",
-    "build": "tsc && vite build",
+    "dev": "vite --host --strictPort --port 5173",
+    "build": "tsc && vite build --minify esbuild  ",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview --host --strictPort --port 5173"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -53,7 +53,7 @@ export default function Tools() {
                                     md:max-w-14 lg:max-w-20
                              ">
                                 <figure className="">
-                                    <img src={item.logo} className="object-scale-down object-center size-full"/>
+                                    <img src={item.logo} alt={item.caption} className="object-scale-down object-center size-full"/>
                                 </figure>
                                 <p className="  text-center text-sm font-oswald font-normal  text-colorAccent2 mt-3
                                 md:text-base ">{item.caption}</p>

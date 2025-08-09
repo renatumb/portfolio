@@ -47,7 +47,7 @@ export default function Testimonials() {
                                             <figure className="relative flex flex-col-reverse bg-colorSecondary rounded-lg p-5 ">
                                                 <blockquote className="mt-6 text-colorAccent2 "><p>{item.feedback}</p></blockquote>
                                                 <figcaption className="flex items-center space-x-4">
-                                                    <img src={item.photo} alt="" className="flex-none w-16 h-16 rounded-full object-cover"/>
+                                                    <img src={item.photo} alt={"profile picture"} className="flex-none w-16 h-16 rounded-full object-cover"/>
                                                     <div className="flex-auto">
                                                         <div className="text-base text-colorAccent1 font-semibold ">
                                                             <span className="absolute inset-0"></span>{item.name}
@@ -71,7 +71,7 @@ export default function Testimonials() {
                                             <figure className="relative flex flex-col-reverse bg-colorSecondary rounded-lg p-5 ">
                                                 <blockquote className="mt-6 text-colorAccent2 "><p>{item.feedback}</p></blockquote>
                                                 <figcaption className="flex items-center space-x-4">
-                                                    <img src={item.photo} alt="" className="flex-none w-16 h-16 rounded-full object-cover"/>
+                                                    <img src={item.photo} alt={"profile picture"} className="flex-none w-16 h-16 rounded-full object-cover"/>
                                                     <div className="flex-auto">
                                                         <div className="text-base text-colorAccent1 font-semibold ">
                                                             <span className="absolute inset-0"></span>{item.name}
@@ -95,7 +95,7 @@ export default function Testimonials() {
                                             <figure className="relative flex flex-col-reverse bg-colorSecondary rounded-lg p-5 ">
                                                 <blockquote className="mt-6 text-colorAccent2 "><p>{item.feedback}</p></blockquote>
                                                 <figcaption className="flex items-center space-x-4">
-                                                    <img src={item.photo} alt="" className="flex-none w-16 h-16 rounded-full object-cover"/>
+                                                    <img src={item.photo} alt={"profile picture"} className="flex-none w-16 h-16 rounded-full object-cover"/>
                                                     <div className="flex-auto">
                                                         <div className="text-base text-colorAccent1 font-semibold ">
                                                             <span className="absolute inset-0"></span>{item.name}

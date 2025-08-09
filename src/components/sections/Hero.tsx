@@ -41,7 +41,7 @@ export default function Hero() {
                     <img src={image} className=" size-36
                                                  sm:translate-y-10
                                                  lg:size-52 lg:translate-y-24
-                                                 xl:size-96"/>
+                                                 xl:size-96" alt="Cutest Robot Ever!"/>
                 </div>
             </article>
         </section>

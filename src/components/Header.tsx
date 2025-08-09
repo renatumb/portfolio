@@ -71,11 +71,11 @@ export default function Header({toggleContactModal}: HeaderProps) {
 
     return (
         <>
-        <header id='header' className="sticky top-0   w-screen z-30 transition-all  bg-colorPrimary">
+        <header id='header' className="sticky top-0  z-30 transition-all  bg-colorPrimary">
             <section className="container ">
                 <nav id="mainNav" className="flex justify-between items-center py-1  flex-1  transition-all  ">
 
-                    <a href="#"><RiTerminalBoxLine className="size-14 text-colorAccent3 hover:text-colorAccent1 hover:scale-110 transition-all"/></a>
+                    <a href="#" aria-label={"Home"}><RiTerminalBoxLine className="size-14 text-colorAccent3 hover:text-colorAccent1 hover:scale-110 transition-all"/></a>
 
                     <div></div>
                     <div></div>

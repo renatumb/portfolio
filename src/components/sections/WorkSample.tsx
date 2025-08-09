@@ -26,7 +26,7 @@ export default function WorkSample({title, description, image, icons, link}: Wor
                             icons.map((item, index) => {
                                 return (
                                     <div key={index} className="size-5 md:size-7">
-                                        <img className="object-scale-down object-center size-full  mono-color-filter hover:scale-110" src={item}/>
+                                        <img className="object-scale-down object-center size-full  mono-color-filter hover:scale-110" src={item} alt={"technology icon"}/>
                                     </div>
                                 )
                             })
@@ -35,7 +35,7 @@ export default function WorkSample({title, description, image, icons, link}: Wor
                 </div>
             </div>
             <a target="_blank" href={link}>
-                <img className=" object-scale-down object-center md:max-w-[500px]" src={image}/>
+                <img className=" object-scale-down object-center md:max-w-[500px]" src={image} alt={"project thumbnail"}/>
             </a>
         </div>
     )
