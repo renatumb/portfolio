@@ -69,7 +69,7 @@ export default function ContactModal({toggleContactModal, modalId}: ContactModal
                         <div className="p-2 border border-colorSecondary my-3 rounded bg-colorSecondary/30 hover:scale-105 hover:bg-colorAccent1/5 transition-all">
                             <div className="flex flex-row items-center gap-3 text-sm text-nowrap text-colorAccent2 sm:text-lg">
                                 <div className='justify-self-end size-6 sm:size-10 mono-color-filter'>
-                                    <img src={i2aem} className=""/>
+                                    <img src={i2aem} className="" alt="aem blog"/>
                                 </div>
                                 <div>
                                     <p>My AEM Blog</p>
