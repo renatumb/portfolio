@@ -4,6 +4,8 @@ import Main from "./components/Main.tsx";
 import Footer from "./components/Footer.tsx";
 import ContactModal from "./ContactModal.tsx";
 import SideBar from "./components/SideBar.tsx";
+import {useEffect} from "react";
+import { initGA } from './analitics.tsx';
 
 function App() {
 
@@ -14,6 +16,10 @@ function App() {
             modal.classList.toggle('hidden')
         }
     }
+
+    useEffect(() => {
+        initGA();
+    }, []);
 
     return (
         <>

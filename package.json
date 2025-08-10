@@ -10,9 +10,10 @@
     "preview": "vite preview --host --strictPort --port 5173"
   },
   "dependencies": {
+    "@remixicon/react": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@remixicon/react": "^4.2.0",
+    "react-ga4": "^2.1.0",
     "swiper": "^11.0.7"
   },
   "devDependencies": {
